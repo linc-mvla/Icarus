@@ -89,3 +89,4 @@ Assets/Ludiq.meta
 Assets/Ludiq.Generated.meta
 
 *.pfx
+.DS_Store 
