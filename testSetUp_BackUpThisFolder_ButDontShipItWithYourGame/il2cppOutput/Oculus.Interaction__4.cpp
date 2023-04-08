@@ -10213,7 +10213,7 @@ IL_0019_1:
 				JointRotationFeatureConfig_t1CC2C542E793D8FFB0FC49B163114F03D4EB28E4* L_14 = V_1;
 				NullCheck(L_13);
 				bool L_15;
-				L_15 = InterfaceFuncInvoker2< bool, JointRotationFeatureConfig_t1CC2C542E793D8FFB0FC49B163114F03D4EB28E4*, JointRotationFeatureState_t293BD5640481C36FBD0E01AB30998C1D1C1D5ADE* >::Invoke(0 /* System.Boolean System.Collections.Generic.IReadOnlyDictionary`2<Oculus.Interaction.PoseDetection.JointRotationActiveState/JointRotationFeatureConfig,Oculus.Interaction.PoseDetection.JointRotationActiveState/JointRotationFeatureState>::TryGetValue(TKey,TValue&) */, IReadOnlyDictionary_2_t9412854A3A21CBD9CB7EF1FD0C4077F327A22670_il2cpp_TypeInfo_var, L_13, L_14, (&V_3));
+				L_15 = InterfaceFuncInvoker2< bool, JointRotationFeatureConfig_t1CC2C542E793D8FFB0FC49B163114F03D4EB28E4*, JointRotationFeatureState_t293BD5640481C36FBD0E01AB30998C1D1C1D5ADE* >::Invoke(1 /* System.Boolean System.Collections.Generic.IReadOnlyDictionary`2<Oculus.Interaction.PoseDetection.JointRotationActiveState/JointRotationFeatureConfig,Oculus.Interaction.PoseDetection.JointRotationActiveState/JointRotationFeatureState>::TryGetValue(TKey,TValue&) */, IReadOnlyDictionary_2_t9412854A3A21CBD9CB7EF1FD0C4077F327A22670_il2cpp_TypeInfo_var, L_13, L_14, (&V_3));
 				if (!L_15)
 				{
 					goto IL_0067_1;
@@ -10698,7 +10698,7 @@ IL_0019_1:
 				JointVelocityFeatureConfig_tFE1EDD72849712DC70F8B3194BE780F14CC76DEC* L_14 = V_1;
 				NullCheck(L_13);
 				bool L_15;
-				L_15 = InterfaceFuncInvoker2< bool, JointVelocityFeatureConfig_tFE1EDD72849712DC70F8B3194BE780F14CC76DEC*, JointVelocityFeatureState_tA17C290CDFB76352D9CEFC3E7B790E0CAEF22105* >::Invoke(0 /* System.Boolean System.Collections.Generic.IReadOnlyDictionary`2<Oculus.Interaction.PoseDetection.JointVelocityActiveState/JointVelocityFeatureConfig,Oculus.Interaction.PoseDetection.JointVelocityActiveState/JointVelocityFeatureState>::TryGetValue(TKey,TValue&) */, IReadOnlyDictionary_2_tE31ECD6C74D0064936DF323F6A83D50891C9270F_il2cpp_TypeInfo_var, L_13, L_14, (&V_3));
+				L_15 = InterfaceFuncInvoker2< bool, JointVelocityFeatureConfig_tFE1EDD72849712DC70F8B3194BE780F14CC76DEC*, JointVelocityFeatureState_tA17C290CDFB76352D9CEFC3E7B790E0CAEF22105* >::Invoke(1 /* System.Boolean System.Collections.Generic.IReadOnlyDictionary`2<Oculus.Interaction.PoseDetection.JointVelocityActiveState/JointVelocityFeatureConfig,Oculus.Interaction.PoseDetection.JointVelocityActiveState/JointVelocityFeatureState>::TryGetValue(TKey,TValue&) */, IReadOnlyDictionary_2_tE31ECD6C74D0064936DF323F6A83D50891C9270F_il2cpp_TypeInfo_var, L_13, L_14, (&V_3));
 				if (!L_15)
 				{
 					goto IL_0067_1;

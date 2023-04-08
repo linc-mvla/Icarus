@@ -18226,7 +18226,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenCloseStateBuilder__ctor_mAB0F90185AD
 		int32_t L_3 = __this->____fingerFeature_1;
 		NullCheck(L_2);
 		FeatureDescription_t8FF400243BDD3D1212B4BE0678426ADD02EBCE02* L_4;
-		L_4 = InterfaceFuncInvoker1< FeatureDescription_t8FF400243BDD3D1212B4BE0678426ADD02EBCE02*, int32_t >::Invoke(1 /* TValue System.Collections.Generic.IReadOnlyDictionary`2<Oculus.Interaction.PoseDetection.FingerFeature,Oculus.Interaction.PoseDetection.FeatureDescription>::get_Item(TKey) */, IReadOnlyDictionary_2_tDBEDDB3C706A71057C78ED712625FF0C07F43EB4_il2cpp_TypeInfo_var, L_2, L_3);
+		L_4 = InterfaceFuncInvoker1< FeatureDescription_t8FF400243BDD3D1212B4BE0678426ADD02EBCE02*, int32_t >::Invoke(2 /* TValue System.Collections.Generic.IReadOnlyDictionary`2<Oculus.Interaction.PoseDetection.FingerFeature,Oculus.Interaction.PoseDetection.FeatureDescription>::get_Item(TKey) */, IReadOnlyDictionary_2_tDBEDDB3C706A71057C78ED712625FF0C07F43EB4_il2cpp_TypeInfo_var, L_2, L_3);
 		NullCheck(L_4);
 		FeatureStateDescriptionU5BU5D_t9E59F8181F6573B081F443C115351608B525183C* L_5;
 		L_5 = FeatureDescription_get_FeatureStates_mDC30D3E98102B4CCAA82C439EBF5C667DC39DED8_inline(L_4, NULL);
@@ -19044,7 +19044,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrueFalseStateBuilder__ctor_m4E8D404212F
 		int32_t L_3 = __this->____transformFeature_1;
 		NullCheck(L_2);
 		FeatureDescription_t8FF400243BDD3D1212B4BE0678426ADD02EBCE02* L_4;
-		L_4 = InterfaceFuncInvoker1< FeatureDescription_t8FF400243BDD3D1212B4BE0678426ADD02EBCE02*, int32_t >::Invoke(1 /* TValue System.Collections.Generic.IReadOnlyDictionary`2<Oculus.Interaction.PoseDetection.TransformFeature,Oculus.Interaction.PoseDetection.FeatureDescription>::get_Item(TKey) */, IReadOnlyDictionary_2_t7AEA088251267779522229886D06EDBDAB08DCF9_il2cpp_TypeInfo_var, L_2, L_3);
+		L_4 = InterfaceFuncInvoker1< FeatureDescription_t8FF400243BDD3D1212B4BE0678426ADD02EBCE02*, int32_t >::Invoke(2 /* TValue System.Collections.Generic.IReadOnlyDictionary`2<Oculus.Interaction.PoseDetection.TransformFeature,Oculus.Interaction.PoseDetection.FeatureDescription>::get_Item(TKey) */, IReadOnlyDictionary_2_t7AEA088251267779522229886D06EDBDAB08DCF9_il2cpp_TypeInfo_var, L_2, L_3);
 		NullCheck(L_4);
 		FeatureStateDescriptionU5BU5D_t9E59F8181F6573B081F443C115351608B525183C* L_5;
 		L_5 = FeatureDescription_get_FeatureStates_mDC30D3E98102B4CCAA82C439EBF5C667DC39DED8_inline(L_4, NULL);
