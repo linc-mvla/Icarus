@@ -6,7 +6,8 @@ public class LevelGenerator : MonoBehaviour
 {
     public Transform playerPos;
     public GameObject[] sections;
-    [SerializeField] float renderDist = 200;
+    [SerializeField] float renderDist = 200f;
+    [SerializeField] float scaleTiles = 1.0f;
     [SerializeField] Vector2 gridSize;
     private Dictionary<Vector2Int, GameObject> createdSections = new Dictionary<Vector2Int, GameObject>();
 
@@ -49,6 +50,7 @@ public class LevelGenerator : MonoBehaviour
         int secNum = Random.Range(0, sections.Length);
         Vector3 pos = new Vector3(gridSize.x * cell.x, 0, gridSize.y * cell.y);
         GameObject o = Instantiate(sections[secNum], pos, Quaternion.identity);
+        o.transform.localScale = new Vector3(scaleTiles, scaleTiles, scaleTiles);
         createdSections.Add(cell, o);
     }
 }
