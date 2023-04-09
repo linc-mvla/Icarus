@@ -6,16 +6,17 @@ TagManager:
   tags:
   - RoomLight
   - SamplesInfoPanel
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - Ground
-  - 
-  - 
+  - Enemy
+  - Bullet
+  - Objects
   - 
   - 
   - 
