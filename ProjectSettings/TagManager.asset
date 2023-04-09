@@ -6,7 +6,10 @@ TagManager:
   tags:
   - RoomLight
   - SamplesInfoPanel
+<<<<<<< HEAD
   - Enemy
+=======
+>>>>>>> 67e0e0261f5cab9aee0e61b5b300602d92b22ad9
   layers:
   - Default
   - TransparentFX
@@ -14,7 +17,11 @@ TagManager:
   - Player
   - Water
   - UI
+<<<<<<< HEAD
   - Enemy
+=======
+  - Ground
+>>>>>>> 67e0e0261f5cab9aee0e61b5b300602d92b22ad9
   - 
   - 
   - 
