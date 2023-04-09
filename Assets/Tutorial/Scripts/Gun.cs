@@ -94,7 +94,7 @@ public class Gun : MonoBehaviour
 
     public void Swing()
     {
-        Vector3 disJointToPlayer = bulletScript.hitPos - player.position;
-        player.AddForce(disJointToPlayer * strength, ForceMode.VelocityChange);
+        Vector3 PlayerToGrapple = bulletScript.hitPos - player.position;
+        player.AddForce(PlayerToGrapple * strength, ForceMode.VelocityChange);
     }
 }
