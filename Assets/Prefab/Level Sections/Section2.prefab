@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1813684441225423880}
   - component: {fileID: 702097991401014364}
   - component: {fileID: 8868910894334248126}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 2639900172902563856}
   - component: {fileID: 8645297525703841106}
   - component: {fileID: 5750479631625526824}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1266406411886853005}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Section2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 5151152788473618485}
   - component: {fileID: 8250725423049899337}
   - component: {fileID: 9178970656061652220}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
