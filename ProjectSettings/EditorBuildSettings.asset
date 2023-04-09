@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TestStage VR.unity
     guid: 1d20277c149164661bd5034366409be4
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Test Map 2.unity
     guid: b46923d0736a34d86961bfcb527ead49
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TUtorial Attempt.unity
     guid: be1278ac7b8a54ed29bcce91fbbfe2e0
   - enabled: 0
