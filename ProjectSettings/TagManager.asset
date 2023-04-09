@@ -3,24 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - RoomLight
-  - SamplesInfoPanel
-<<<<<<< HEAD
-  - Wall
-=======
-  - Enemy
->>>>>>> 21ad4a7404ffc015600dba5028bc1d140543eb87
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - 
   - Water
   - UI
-  - Enemy
-  - Bullet
-  - Objects
+  - 
+  - 
+  - 
   - 
   - 
   - 
