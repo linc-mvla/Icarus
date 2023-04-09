@@ -21,14 +21,12 @@ public class Gun : MonoBehaviour
     //  public Transform hand;
     [Header("Player Info")]
     public GameObject playerGameObj;
-    Transform playerTransform;
-    SpringJoint springJoint;
-
-
+    Rigidbody player;
 
     [Header("Gun Info")]
     public Transform barrel;
     public bool Shot { get; set; }
+    public float strength;
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +35,7 @@ public class Gun : MonoBehaviour
         bulletRb = bulletGameObj.GetComponent<Rigidbody>();
         bulletScript = bulletGameObj.GetComponent<Bullet>();
 
-        playerTransform = playerGameObj.transform;
+        player = playerGameObj.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -74,6 +72,11 @@ public class Gun : MonoBehaviour
             bulletTransform.forward = barrel.forward;
             CancelFire();
         }
+
+        if (bulletScript.Contact())
+        {
+            Swing();
+        }
     }
 
     public void Fire()
@@ -86,24 +89,12 @@ public class Gun : MonoBehaviour
     public void CancelFire()
     {
         Shot = false;
-        Destroy(springJoint);
-        bulletScript.DestroyJoint();
+        bulletScript.resetHit();
     }
 
     public void Swing()
     {
-        springJoint = playerGameObj.AddComponent<SpringJoint>();
-        springJoint.connectedBody = bulletScript.collisionObject.GetComponent<Rigidbody>();
-        springJoint.autoConfigureConnectedAnchor = false;
-        springJoint.connectedAnchor = Vector3.zero;
-        springJoint.anchor = Vector3.zero;
-
-        float disJointToPlayer = Vector3.Distance(playerTransform.position, bulletTransform.position);
-
-        springJoint.maxDistance = disJointToPlayer * 0.9f;
-        springJoint.minDistance = disJointToPlayer * 0.1f;
-        springJoint.damper = 100f;
-        springJoint.spring = 300f;
-
+        Vector3 disJointToPlayer = bulletScript.hitPos - player.position;
+        player.AddForce(disJointToPlayer * strength, ForceMode.VelocityChange);
     }
 }

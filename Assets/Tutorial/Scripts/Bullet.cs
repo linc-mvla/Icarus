@@ -6,25 +6,27 @@ public class Bullet : MonoBehaviour
 {
 
     public Gun gun;
-    FixedJoint fixedJoint;
 
     [HideInInspector]
-    public GameObject collisionObject;
+    public Vector3 hitPos { get; private set; }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Wall")
         {
-            collisionObject = collision.gameObject;
-            fixedJoint = gameObject.AddComponent<FixedJoint>();
-            fixedJoint.connectedBody = collision.gameObject.GetComponent<Rigidbody>();
+            if (!Contact())
+            {
+                hitPos = GetComponent<Rigidbody>().position;
+            }
         }
-
-        gun.Swing();
     }
 
-    public void DestroyJoint()
+    public bool Contact() {
+        return hitPos != null;
+    }
+
+    public void resetHit()
     {
-        Destroy(fixedJoint);
+        hitPos = Vector3.zero;
     }
 }
