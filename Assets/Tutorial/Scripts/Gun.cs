@@ -72,6 +72,7 @@ public class Gun : MonoBehaviour
         {
             bulletTransform.position = barrel.position;
             bulletTransform.forward = barrel.forward;
+            CancelFire();
         }
     }
 
