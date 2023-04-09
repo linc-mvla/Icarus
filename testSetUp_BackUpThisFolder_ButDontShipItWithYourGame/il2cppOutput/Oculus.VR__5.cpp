@@ -2123,7 +2123,7 @@ struct Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D
 struct ShaderTagId_t453E2085B5EE9448FF75E550CAB111EFF690ECB0 
 {
 	// System.Int32 UnityEngine.Rendering.ShaderTagId::m_Id
-	int32_t ___m_Id_0;
+	int32_t ___m_Id_1;
 };
 
 // System.Single

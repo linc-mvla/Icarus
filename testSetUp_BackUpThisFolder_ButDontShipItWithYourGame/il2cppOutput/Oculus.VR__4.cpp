@@ -18874,13 +18874,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCubemapCapture_RenderIntoCubemap_m661
 		Cubemap_t4F2DFF70696A5CB5C1695DF8947CC60D718C4A1C* L_0 = ___1_outCubemap;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_0);
 		V_0 = L_1;
 		// int height = (int)outCubemap.height;
 		Cubemap_t4F2DFF70696A5CB5C1695DF8947CC60D718C4A1C* L_2 = ___1_outCubemap;
 		NullCheck(L_2);
 		int32_t L_3;
-		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_2);
+		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_2);
 		V_1 = L_3;
 		// CubemapFace[] faces = new CubemapFace[] { CubemapFace.PositiveX, CubemapFace.NegativeX, CubemapFace.PositiveY, CubemapFace.NegativeY, CubemapFace.PositiveZ, CubemapFace.NegativeZ };
 		CubemapFaceU5BU5D_t0FE0FDC5516DC76F62630A582CE16AC975AB8F0D* L_4 = (CubemapFaceU5BU5D_t0FE0FDC5516DC76F62630A582CE16AC975AB8F0D*)(CubemapFaceU5BU5D_t0FE0FDC5516DC76F62630A582CE16AC975AB8F0D*)SZArrayNew(CubemapFaceU5BU5D_t0FE0FDC5516DC76F62630A582CE16AC975AB8F0D_il2cpp_TypeInfo_var, (uint32_t)6);
@@ -18966,7 +18966,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCubemapCapture_RenderIntoCubemap_m661
 		// faceTexture.dimension = UnityEngine.Rendering.TextureDimension.Tex2D;
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_32 = V_8;
 		NullCheck(L_32);
-		VirtualActionInvoker1< int32_t >::Invoke(8 /* System.Void UnityEngine.Texture::set_dimension(UnityEngine.Rendering.TextureDimension) */, L_32, 2);
+		VirtualActionInvoker1< int32_t >::Invoke(10 /* System.Void UnityEngine.Texture::set_dimension(UnityEngine.Rendering.TextureDimension) */, L_32, 2);
 		// faceTexture.hideFlags = HideFlags.HideAndDontSave;
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_33 = V_8;
 		NullCheck(L_33);
@@ -18999,11 +18999,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OVRCubemapCapture_RenderIntoCubemap_m661
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_42 = V_9;
 		NullCheck(L_42);
 		int32_t L_43;
-		L_43 = VirtualFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_42);
+		L_43 = VirtualFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_42);
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_44 = V_9;
 		NullCheck(L_44);
 		int32_t L_45;
-		L_45 = VirtualFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_44);
+		L_45 = VirtualFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_44);
 		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_46 = (ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389*)(ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389*)SZArrayNew(ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389_il2cpp_TypeInfo_var, (uint32_t)((int32_t)il2cpp_codegen_multiply(L_43, L_45)));
 		V_10 = L_46;
 		// for (int i = 0; i < faces.Length; i++)
@@ -19229,13 +19229,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRCubemapCapture_SaveCubemapCapture_m22
 		Cubemap_t4F2DFF70696A5CB5C1695DF8947CC60D718C4A1C* L_0 = ___0_cubemap;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_0);
 		V_2 = L_1;
 		// int height = cubemap.height;
 		Cubemap_t4F2DFF70696A5CB5C1695DF8947CC60D718C4A1C* L_2 = ___0_cubemap;
 		NullCheck(L_2);
 		int32_t L_3;
-		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_2);
+		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_2);
 		V_3 = L_3;
 		// int x = 0;
 		V_4 = 0;
