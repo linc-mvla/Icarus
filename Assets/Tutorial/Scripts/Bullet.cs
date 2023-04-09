@@ -4,29 +4,38 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-
-    public Gun gun;
+    Rigidbody rb;
 
     [HideInInspector]
     public Vector3 hitPos { get; private set; }
+    private bool hasHit = false;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Wall")
         {
-            if (!Contact())
+            if (!hasHit)
             {
-                hitPos = GetComponent<Rigidbody>().position;
+                hitPos = rb.position;
+                hasHit = true;
+                rb.useGravity = false;
+                rb.velocity = Vector3.zero;
             }
         }
     }
 
     public bool Contact() {
-        return hitPos != null;
+        return hasHit;
     }
 
     public void resetHit()
     {
-        hitPos = Vector3.zero;
+        hasHit = false;
+        rb.useGravity = true;
     }
 }

@@ -26,7 +26,8 @@ public class Gun : MonoBehaviour
     [Header("Gun Info")]
     public Transform barrel;
     public bool Shot { get; set; }
-    public float strength;
+    public float strengthWeak = 15f;
+    public float strengthStrong = 1.1f;
 
     // Start is called before the first frame update
     void Start()
@@ -95,6 +96,17 @@ public class Gun : MonoBehaviour
     public void Swing()
     {
         Vector3 PlayerToGrapple = bulletScript.hitPos - player.position;
-        player.AddForce(PlayerToGrapple * strength, ForceMode.VelocityChange);
+        Vector3 norm = PlayerToGrapple.normalized;
+        float dot = Vector3.Dot(player.velocity, norm);
+        Vector3 force = norm * strengthWeak;
+        if (player.velocity.magnitude < 10)
+        {
+            force += norm * (strengthWeak / (player.velocity.magnitude + 0.01f));
+        }
+        if (dot < 0)
+        {//Moving away
+            force += norm * (strengthStrong * (-dot));
+        }
+        player.AddForce(force, ForceMode.VelocityChange);
     }
 }

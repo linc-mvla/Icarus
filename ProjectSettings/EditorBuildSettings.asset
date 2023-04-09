@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TestStage VR.unity
     guid: 1d20277c149164661bd5034366409be4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test Map 2.unity
     guid: b46923d0736a34d86961bfcb527ead49
   - enabled: 0
@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Menu.unity
     guid: 2784cb58af6cb4d78984c9bb787af39b
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/LevelGenerationVR.unity
     guid: 2708aee6afcb745aeb38c0415e55d3d1
   m_configObjects:
