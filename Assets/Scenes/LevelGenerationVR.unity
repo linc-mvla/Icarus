@@ -282,6 +282,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &610856795 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8375156446081646707, guid: ec5bca7f0bf7a440e8ecc8466f0e6780, type: 3}
+  m_PrefabInstance: {fileID: 127989633}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1046150062
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,11 +355,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1122382217 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4210091651988677898, guid: ec5bca7f0bf7a440e8ecc8466f0e6780, type: 3}
-  m_PrefabInstance: {fileID: 127989633}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2105583646
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e898ae5f787c5a4abe69d5b54dec4c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPos: {fileID: 1122382217}
+  playerPos: {fileID: 610856795}
   sections:
   - {fileID: 1645702157130713318, guid: 14e625a79de94514791b34191a4c9dd7, type: 3}
   - {fileID: 1645702157130713318, guid: 8df642b50117ebf4da4acb5a0ea6cffd, type: 3}
@@ -427,7 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1a1319f6abf8d242adfd82483a7846a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPos: {fileID: 1122382217}
+  playerPos: {fileID: 610856795}
   enemies: []
   distSpawn:
   - 100
