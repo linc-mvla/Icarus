@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 6203248337599503287, guid: a6dbdafa34cfeb847852fd641d3e16b9, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 7446597345929484411, guid: 4cd6388c4786c84468358cdf3f8baf9c, type: 3}
   seeDist: 100
   shootCooldown: 2
   spawnDist: 1

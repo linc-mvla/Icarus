@@ -402,7 +402,8 @@ MonoBehaviour:
   - {fileID: 112824415288915632, guid: 21a34781a2e831d4e9cfa86aa35dc707, type: 3}
   - {fileID: 1645702157130713318, guid: 184ad7a76e8cb2d4584edffded93414f, type: 3}
   renderDist: 400
-  gridSize: {x: 100, y: 50}
+  scaleTiles: 0.4
+  gridSize: {x: 40, y: 20}
 --- !u!4 &2105583648
 Transform:
   m_ObjectHideFlags: 0
