@@ -6,7 +6,11 @@ TagManager:
   tags:
   - RoomLight
   - SamplesInfoPanel
+<<<<<<< HEAD
+  - Wall
+=======
   - Enemy
+>>>>>>> 21ad4a7404ffc015600dba5028bc1d140543eb87
   layers:
   - Default
   - TransparentFX
