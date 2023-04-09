@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[ExecuteAlways]
 public class LightingManager : MonoBehaviour
 {
     [SerializeField] Light DirectionalLight;
@@ -29,6 +30,16 @@ public class LightingManager : MonoBehaviour
             }
         }
     }
+
+    private void UpdateLighting(float timePercent) {
+        RenderSettings.ambientLight = Preset.AmbientColor.Evaluate(timePercent);
+        RenderSettings.fogColor = Preset.FogColor.Evaluate(timePercent);
+
+        if (DirectionalLight != null) {
+            DirectionalLight.color = Preset.DirectionalColor.Evaluate(timePercent);
+            DirectionalLight.transform.localRotation = Quaternion.Euler(new Vector3(timePercent*360f, 170f, 0));
+        }
+    }
     void Start()
     {
         
@@ -37,6 +48,13 @@ public class LightingManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Preset == null) {
+            return;
+        }
+        if (Application.isPlaying) {
+            TimeOfDay += Time.deltaTime;
+            TimeOfDay %= 24.0f;
+        }
+        UpdateLighting(TimeOfDay / 24.0f);
     }
 }

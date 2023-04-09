@@ -23,6 +23,10 @@ public class LevelGenerator : MonoBehaviour
     {
         int playerX = (int)(playerPos.position.x/gridSize.x);
         int playerZ = (int)(playerPos.position.z/gridSize.y);
+        Vector2Int playerGrid = new Vector2Int(playerX, playerZ);
+        if (!createdSections.ContainsKey(playerGrid)){
+            GenerateSection(playerGrid, 0);
+        }
         for (int x = -renderGridNum.x; x <= renderGridNum.x; x++) {
             for (int z = -renderGridNum.y; z <= renderGridNum.y; z++)
             {
@@ -46,8 +50,16 @@ public class LevelGenerator : MonoBehaviour
         }
     }
 
-    void GenerateSection(Vector2Int cell) {
-        int secNum = Random.Range(0, sections.Length);
+    void GenerateSection(Vector2Int cell, int num = -1) {
+        int secNum;
+        if (num < 0)
+        {
+            secNum = Random.Range(0, sections.Length);
+        }
+        else {
+            secNum = num;
+        }
+
         Vector3 pos = new Vector3(gridSize.x * cell.x, 0, gridSize.y * cell.y);
         GameObject o = Instantiate(sections[secNum], pos, Quaternion.identity);
         o.transform.localScale = new Vector3(scaleTiles, scaleTiles, scaleTiles);
