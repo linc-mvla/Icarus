@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GrapplingGun : MonoBehaviour
 {
@@ -10,18 +11,25 @@ public class GrapplingGun : MonoBehaviour
     private float maxDistance = 100f;
     private SpringJoint joint;
 
+    public InputActionProperty pullTriggerAction;
+
+    Renderer ren;
+
     void Awake()
     {
         lr = GetComponent<LineRenderer>();
+        ren = GetComponent<Renderer>();
+
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        float pullTriggerValue = pullTriggerAction.action.ReadValue<float>();
+        if (pullTriggerValue > 0.7)
         {
             StartGrapple();
         }
-        else if (Input.GetMouseButtonUp(0))
+        else if (pullTriggerValue <= 0.7)
         {
             StopGrapple();
         }
@@ -59,6 +67,10 @@ public class GrapplingGun : MonoBehaviour
 
             lr.positionCount = 2;
             currentGrapplePosition = gunTip.position;
+            if (TryGetComponent<SpringJoint>(out SpringJoint component))
+            {
+                ren.material.color = Color.green;
+            }
         }
     }
 
@@ -70,6 +82,11 @@ public class GrapplingGun : MonoBehaviour
     {
         lr.positionCount = 0;
         Destroy(joint);
+        if (TryGetComponent<SpringJoint>(out SpringJoint component))
+        {
+            ren.material.color = Color.red;
+        }
+
     }
 
     private Vector3 currentGrapplePosition;
@@ -77,7 +94,7 @@ public class GrapplingGun : MonoBehaviour
     void DrawRope()
     {
         //If not grappling, don't draw rope
-        //if (!joint) return;
+        if (!joint) return;
 
         currentGrapplePosition = Vector3.Lerp(currentGrapplePosition, grapplePoint, Time.deltaTime * 8f);
 

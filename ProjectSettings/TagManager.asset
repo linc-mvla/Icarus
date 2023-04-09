@@ -6,6 +6,7 @@ TagManager:
   tags:
   - RoomLight
   - SamplesInfoPanel
+  - Wall
   layers:
   - Default
   - TransparentFX

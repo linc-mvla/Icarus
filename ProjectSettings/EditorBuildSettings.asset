@@ -8,9 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SetUp.unity
     guid: 0f267a7d5aac74525bd17e63fbab97eb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestStage VR.unity
     guid: 1d20277c149164661bd5034366409be4
+  - enabled: 0
+    path: Assets/Scenes/Test Map 2.unity
+    guid: b46923d0736a34d86961bfcb527ead49
+  - enabled: 1
+    path: Assets/Scenes/TUtorial Attempt.unity
+    guid: be1278ac7b8a54ed29bcce91fbbfe2e0
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 249eafa16e26049f5890ddd63e7857c1, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 4bac1d75156994610b40898320656908, type: 2}
