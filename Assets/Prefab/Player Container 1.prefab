@@ -493,3 +493,15 @@ MonoBehaviour:
   gunTip: {fileID: 6891357043292605708}
   camera: {fileID: 8603698123253574780}
   player: {fileID: 8603698122155313547}
+  pullTriggerAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Pull Trigger
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 5b46dfc2-8e56-451a-af90-d0f602af7143
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
